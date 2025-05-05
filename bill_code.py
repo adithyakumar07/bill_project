@@ -4,8 +4,8 @@ SGST = 18 / 100
 CGST = 18 / 100
 
 
-print("------- We are selling iPhone mobiles --------")
-print("-------Each costs 90000 INR ---------------")
+print("------- We are selling iPhone mobiles --------\n")
+print("-------Each mobile cost is 90000 INR ---------------\n")
 
 required_items = int(input("No. of required items: "))
  
@@ -32,11 +32,11 @@ iPhone_discount_amount = iPHONE_16_mobile_cost * discount
 total_cost = iPHONE_16_mobile_cost + iPhone_SGST + iPhone_CGST - iPhone_discount_amount
 
 # Output
-print("------------ Billing Summary --------------------")
-print("     Total mobile Cost        : ₹",iPhone_total_cost)
-print("     SGST (18%)                : ₹",iPhone_SGST)
-print("     CGST (18%)               : ₹",iPhone_CGST)
-print("     Discount Applied(" ,discount,") : ₹",iPhone_discount_amount)
+print("\n------------ Billing Summary --------------------")
+print("     Total mobile Cost	: ₹",iPhone_total_cost)
+print("     SGST (18%)		: ₹",iPhone_SGST)
+print("     CGST (18%)		: ₹",iPhone_CGST)
+print("     Discount ({}%)	:{}".format(int(discount*100),iPhone_discount_amount ))
 print("-------------------------------------------------")
 print("     Total Payable Amount     : ₹",total_cost)
 print("-------------------------------------------------")
